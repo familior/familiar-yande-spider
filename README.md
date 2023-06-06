@@ -5,18 +5,26 @@
 本程序使用IDM进行下载，所以要先配置好IDM的目录才行
 
 idman [/q | /h | /n | /a] [/d URL] [/p 下载目录] [/f 自定义文件名]
+
 /d URL 		- 下载一个文件，等等。
+
 /s		 	- 开始任务调度里的队列
+
 /p 下载目录  	- 定义要保存的文件放在哪个本地路径
+
 /f 自定义文件名   - 定义要保存的文件到本地的文件名
+
 /q 			- IDM 将在成功下载之后退出。这个参数只为第一个副本工作
+
 /h 			- IDM 将在成功下载之后挂起您的连接
+
 /n 			- 当不要 IDM 询问任何问题时启用安静模式
+
 /a 			- 添加下载任务时候，不要开始下载
 
 ~~~
 # 添加队列
-IDMan.exe /a /d https://files.yande.re/image/eab73ae33da105f13ed6f3e8e1dc2df3/yande.re%201092685%20ass%20garter_belt%20hololive%20hololive_english%20mori_calliope%20naked%20stockings%20tagme%20thighhighs.png
+IDMan.exe /a /d https://files.yande.re/image/eab73ae33da105f13ed6f3e8e1dc2df3/yande.re%201092685%20ass%20garter_belt%20hololive%20hololive_english%20mori_calliope%20naked%20stockings%20tagme%20thighhighs.png /p twinbox
 # 开始队列
 IDMan.exe /s
 ~~~
@@ -50,6 +58,14 @@ https://files.yande.re/sample/73355b927cd86dfc28dbd9b689ff504f/yande.re%20494284
 如果是jpeg-jpg组合就将jpeg修改成image，jpg修改成png，
 
 如果是sample-jpg组合就将sample修改成image，jpg修改成png，把链接中的%20sample%20修改成%20
+
+==现在发现了一个问题，有些sample-jpg组合的原图是image-jpg组合，而不是image-png组合==
+
+~~~
+https://files.yande.re/sample/590eb1e74153a6787492cd01d476166b/yande.re%20918763%20sample%20bra%20breasts%20cameltoe%20dakimakura%20maid%20nipples%20open_shirt%20pantsu%20panty_pull%20pantyhose%20seifuku%20skirt_lift%20stockings%20thighhighs%20topless%20twinbox.jpg
+~~~
+
+这里有个解决方案，就是image-jpg和image-png组合都试一遍即可
 
 
 

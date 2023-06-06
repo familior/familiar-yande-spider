@@ -1,5 +1,5 @@
 from PoolSpider import crawl_pool
-
+from PostSpider import crawl_post
 
 def main():
     print("欢迎使用芙咪莉儿的Yande图片批量爬取器")
@@ -11,11 +11,13 @@ def main():
 
     select = input()
     if select == "1":
-        print("Posts")
+        crawl_post()
     elif select == "2":
         crawl_pool()
     else:
         print("无法识别选项")
+    print("键入任意键后退出...")
+    input()
 
 
 if __name__ == "__main__":
